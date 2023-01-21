@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Property</title>
+        <style>
+            h1 {
+                background-color: beige;
+                border: 1px solid;
+
+                /* we can change the pattern display of an element */
+                display: inline;
+            }
+            .span {
+                background-color: rgb(250, 238, 168);
+                border: 1px solid;
+
+                display: block;
+            }
+            .span2 {
+                background-color: rgb(115, 226, 230);
+                border: 1px solid;
+
+                /* inline elements ignore some properties, or the property isn't respected by the content, like width, padding and more */
+                width: 500px;
+                padding: 50px;
+                margin: 20px;
+                height: 200px;
+            }
+            .inline-block {
+                background-color:rgb(143, 246, 250);
+                border: 1px solid;
+
+                /* inline-block elements don't ignore some important properties, like padding, margin and others */
+                display: inline-block;
+                padding: 20px;
+                margin: 10px;
+                width: 200px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Display H1</h1>
+        <h1>Display H1 2</h1>
+
+        <span class="span">Display Span</span>
+        <span class="span">Display Span 2</span>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore incidunt minus, similique dolorum eum magnam fugiat? Commodi asperiores eaque nostrum cum doloremque tenetur. Nobis fugiat laudantium, maiores perferendis a praesentium.
+            Temporibus dolore, placeat at deleniti repellendus error ullam impedit.  <span class="span2">Span</span> Ratione necessitatibus quos ad, maxime error maiores animi assumenda omnis esse dolores sapiente quia ut exercitationem aut. Minus libero beatae quos?
+            Temporibus a veritatis quasi mollitia voluptas odio officiis fuga accusamus dolorum modi nisi iure quia, illo deleniti esse cumque similique accusantium illum, quibusdam debitis iste aliquam, optio nemo ex! Possimus!
+            Facilis, maiores maxime rem facere eum, exercitationem molestiae, architecto odio dolorem corporis soluta error? Suscipit, ullam aspernatur in quas quibusdam atque doloribus tenetur eius officia omnis, accusantium consequuntur culpa totam?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore incidunt minus, similique dolorum eum magnam fugiat? Commodi asperiores eaque nostrum cum doloremque tenetur. Nobis fugiat laudantium, maiores perferendis a praesentium.
+            Temporibus dolore, placeat at deleniti repellendus error ullam impedit.  <span class="inline-block">Span</span> Ratione necessitatibus quos ad, maxime error maiores animi assumenda omnis esse dolores sapiente quia ut exercitationem aut. Minus libero beatae quos?
+            Temporibus a veritatis quasi mollitia voluptas odio officiis fuga accusamus dolorum modi nisi iure quia, illo deleniti esse cumque similique accusantium illum, quibusdam debitis iste aliquam, optio nemo ex! Possimus!
+            Facilis, maiores maxime rem facere eum, exercitationem molestiae, architecto odio dolorem corporis soluta error? Suscipit, ullam aspernatur in quas quibusdam atque doloribus tenetur eius officia omnis, accusantium consequuntur culpa totam?
+        </p>
+    </body>
+</html>

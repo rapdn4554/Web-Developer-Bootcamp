@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attribute Selector</title>
+        <style>
+            /* attribute selector is used to select an element per attribute*/
+            /* we will select the inputs with the attribute "type=text" */
+            input[type="text"] {
+                background-color: #fffbb4;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <p>
+                <label for="first">First Name:</label> <br>
+                <input type="text" name="first" id="first">
+            </p>
+            <p>
+                <label for="last">Last Name:</label> <br>
+                <input type="text" name="last" id="last">
+            </p>
+            <p>
+                <label for="password">Password:</label> <br>
+                <input type="password" name="password" id="password">
+            </p>
+        </form>
+    </body>
+</html>

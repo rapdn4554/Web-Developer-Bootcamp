@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Validations</title>
+    </head>
+    <body>
+        <h1>Validations</h1>
+        <form action="">
+            <p>
+                <label for="username">Username:</label><br>
+
+                <!-- "require" - an information will be required  -->
+                <input type="text" name="username" id="username" placeholder="Enter Username" required>
+            </p>
+            <p>
+                <label for="password">Password:</label><br>
+
+                <!-- "minlength" - sets the min of charaters -->
+                <!-- "maxlength" - sets the max of charaters -->
+                <input type="password" name="password" id="password" placeholder="Enter password" minlength="5" maxlength="8" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter email" required>
+            </p>
+            <p>
+                <label for="url">URL:</label><br>
+                <input type="url" name="url" id="url" placeholder="Enter url" required>
+            </p>
+            <button>Register</button>
+        </form>
+    </body>
+</html>

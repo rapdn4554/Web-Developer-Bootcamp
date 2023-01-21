@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform</title>
+        <style>
+            /* h1 */
+            h1 {
+                width: 200px;
+                line-height: 35px;
+                text-align: center;
+                border: 2px solid #000;
+
+                /* auto - margin on the left and right be the same values */
+                margin: 20px auto;
+            }
+            h1:nth-of-type(1) {
+                background-color: #74c69d;
+            }
+            h1:nth-of-type(2) {
+                background-color: #52b788;
+            }
+            h1:nth-of-type(3) {
+                background-color: #40916c;
+            }
+            h1:nth-of-type(4) {
+                background-color: #2d6a4f;
+            }
+
+            .second-sec h1 {
+                margin-bottom: 50px;
+            }
+            
+            /* TRANSFORM */
+
+            /* ROTATE */
+            /* rotate | rotateX | rotateY | rotateZ | rotate3d */
+            .first-sec h1:nth-of-type(1) {
+                
+                /* angles - deg | turn */
+                transform: rotate(-10deg);
+
+                /* we can change the origin of the rotation point */
+                /* top | right | bottom | left */
+                transform-origin: bottom left;
+            }
+
+            /* SCALE */
+            /* scale | scaleX | scaleY | scaleZ | scale3d */
+            .first-sec h1:nth-of-type(2) {
+
+                /* numbers | % | ... */
+                /* x, y */
+                transform: scale(75%);
+            }
+
+            /* TRANSLATE */
+            /* translate | translateX | translateY | translateZ | translate3d */
+            .first-sec h1:nth-of-type(3) {
+
+                /* px | em | rem | ... */
+                /* x, y */
+                transform: translate(-250px, 100px);
+            }
+
+            /* SKEW */
+            /* skew | skewX | skewY */
+            .second-sec h1:nth-of-type(1) {
+
+                /* angles - deg | turn*/
+                /* x, y */
+                transform: skew(0, 20deg);
+            }
+            .second-sec h1:nth-of-type(2) {
+                transform: skew(20deg, 0);
+            }
+
+            /* MIX */
+            .second-sec h1:nth-of-type(3) {
+                transform: rotate(20deg) translate(100px);
+            }
+            .second-sec h1:nth-of-type(4) {
+                transform: skew(10deg) scale(1.5) translate(-100px) rotate(-50deg);
+            }
+
+            /* The value will be applied for all elements we had */
+            section.second-sec {
+                transform: rotate(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <section class="first-sec">
+            <h1>Rotate</h1>
+            <h1>Scale</h1>
+            <h1>Translate</h1>
+            <h1>Normal</h1>
+        </section>
+        <section class="second-sec">
+            <h1>Skew</h1>
+            <h1>Skew 2</h1>
+            <h1>Mix</h1>
+            <h1>Mix</h1>
+        </section>
+    </body>
+</html>

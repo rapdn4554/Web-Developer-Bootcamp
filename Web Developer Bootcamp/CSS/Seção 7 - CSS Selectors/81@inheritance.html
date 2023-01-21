@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inheritance</title>
+        <style>
+            /* the elements will inherit the styles of the body, because they are inside the body */
+            body {
+                color: #002d80;
+            }
+            
+            /* the elements inside the sections will inherit these styles */
+            section {
+                color:#188b0d
+            }
+
+            form {
+                color: red;
+            }
+            
+            /* by default button and input don't inherit stuff */
+            input, button {
+                /* if we define the value equals inherit, the element will receive the styles now */
+                color: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Header</h1>
+        <section>
+            <h2>The Subheader</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, obcaecati. Doloribus nulla porro accusamus voluptatem, quaerat dolorem cumque veritatis nostrum obcaecati voluptate harum repellat rerum impedit itaque. Provident, dolorem omnis!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nulla provident ad quae enim aliquam, aspernatur maxime dolorem pariatur ullam nisi voluptas ipsam omnis molestias fugiat voluptate nostrum? Accusantium, corrupti.
+            </p>
+        </section>
+        <section>
+            <h2>Another Subheader</h2>
+            <form action="">
+                <label for="1">Something you want:</label>
+                <input type="text" name="" id="1">
+                <button>Submit</button>
+            </form>
+        </section>
+    </body>
+</html>

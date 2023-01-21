@@ -1,0 +1,75 @@
+body {
+    
+    min-width: 1800px;
+}
+/* header */
+header {
+    background-color: #e0e0cd;
+    width: 90%;
+    height: 4.5em;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+span {
+    width: 15%;
+    padding: 10px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    background-color: beige;
+    margin: 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+/* div separação */
+.separacao {
+    width: 61.5%;
+    display: inline-block;
+}
+/* nav */
+nav {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+ul {
+    width: 90%;
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+}
+li {
+    border: 1px solid beige;
+    background-color: beige;
+    padding: 10px 15px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+li:hover {
+    background-color: #f0f0db;
+    border: 1px solid rgb(245, 245, 220);
+    box-sizing: border-box;
+    color: #6b655f;
+    box-shadow: 0 5px 5px -3px black;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+/* main */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+section {
+    margin-bottom: 5px;
+}
+img {
+    width: 33%;
+    height: 373px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+section img:nth-of-type(2) {
+    margin: 0 .45%;
+}

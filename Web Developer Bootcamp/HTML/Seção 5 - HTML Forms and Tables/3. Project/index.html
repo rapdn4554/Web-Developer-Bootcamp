@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Race Register Form</title>
+    </head>
+    <body>
+        <thead>
+            <h1>Race Registration</h1>
+        </thead>
+        <tbody>
+            <form action="/register">
+                <div>
+                    <label for="first">First Name</label>
+                    <input type="text" name="first" id="first" placeholder="Enter Your First Name" required>
+
+                    <label for="last">Last Name</label>
+                    <input type="text" name="last" id="last" placeholder="Enter Your Last Name" required>
+                </div>
+
+                <p>Select a Race:</p>
+                <div>
+                    <input type="radio" name="race" id="fun" value="fun" required>
+                    <label for="fun">Fun Run 5k</label> <br>
+
+                    <input type="radio" name="race" id="half" value="half">
+                    <label for="half">Half Marathon</label> <br>
+
+                    <input type="radio" name="race" id="full" value="full">
+                    <label for="full">Full Marathon</label> <br>
+                </div>
+
+                <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter an Email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter a Password" required>
+                </div>
+
+                <br>
+                <div>
+                    <label for="age">Select Age Group</label>
+                    <select name="age-selected" id="age">
+                        <option value="-18">Under 18</option>
+                        <option value="18-30">18 - 30</option>
+                        <option value="30-45">30 - 45</option>
+                        <option value="45-60">45 - 60</option>
+                        <option value="60+">60+</option>
+                    </select>
+                </div>
+
+                <br>
+                <button>Register</button>
+            </form>
+        </tbody>
+    </body>
+</html>

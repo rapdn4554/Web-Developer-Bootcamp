@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Universal and Element Selectors</title>
+        <style>
+
+            /* * - is the universal selector */
+            /* * - usually used to set off the standard formatting */
+            * {
+                color: rgb(0, 92, 92);
+            }
+
+            /* element-selector - will select a determinate type of selector */
+            h1 {
+                text-decoration: underline 5px dashed;
+            }
+
+            /* , - we can combine some selectors in a formatting */
+            button, input {
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" placeholder="search">
+            <button>Log In</button>
+            <button>Sign Up</button>
+        </form>
+
+        <h1>Universal and Element Selectors</h1>
+
+        <p>
+            Lorem ipsum dolor <a href="">sit amet</a>.
+        </p>
+        <h2>h2 Title</h2>
+        <button>Click Here</button>
+    </body>
+</html>

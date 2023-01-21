@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inline Styles and Important</title>
+        <style>
+            /* the inline-style is more specific then the id */
+            #red {
+                color: rgb(221, 0, 37);
+            }
+            p {
+                /* the tag "!important" ignore the specificity and win */
+                font-style: italic !important;
+            }
+            
+            #normal {
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Inline Styles and Important</h1>
+        <h2 id="red" style="color: blue;">Title of Page</h2>
+        <p id="normal">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit error, cumque iure quae ipsa praesentium eveniet. Velit, unde eveniet maxime voluptas vero alias mollitia ad odio. Debitis tempora quod doloribus.
+        </p>
+    </body>
+</html>

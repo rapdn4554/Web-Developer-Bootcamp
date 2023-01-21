@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Range and Text Area</title>
+    </head>
+    <body>
+        <h1>Range and Text Area</h1>
+        <form action="">
+            <p>
+                <!-- with the attribute "range" we create a range input -->
+                <!-- We can use "min" and "max" attributes -->
+                <label for="volume">Volume</label>
+
+                <!-- "step" - value per tick -->
+                <!-- "value" - inicial value -->
+                <input type="range" name="volume" id="volume" min="0" max="10" value="6">
+            </p>
+
+            <p>
+                <label for="text-area">Text Area:</label> <br>
+
+                <!-- "cols" - inicial number of colums -->
+                <!-- "rows" - inicial number of lines -->
+                <!-- "maxlenght" and "minlength" - max or min of characters -->
+                <textarea name="text-area" id="text-area" cols="30" rows="2" maxlength="50" placeholder="Write Something (max 50 characters)"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

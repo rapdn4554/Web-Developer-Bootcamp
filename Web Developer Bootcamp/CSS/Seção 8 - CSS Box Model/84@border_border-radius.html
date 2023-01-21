@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border and Border Radius</title>
+        <style>
+            p {
+                width: 300px;
+                height: 200px;
+            }
+
+            #border-property {
+                background-color: #7fff9473;
+                /* border-width - controls the thickness of the border */
+                border-width: 3px;
+
+                /* border-color - controls the color of the border */
+                border-color: rgb(26, 58, 0);
+
+                /* border-style - controls the line style of the border */
+                /* border-style: solid, dashed, double, dotted... */
+                border-style: double;
+
+                /* box-sizing - will define that the border is at full value */
+                box-sizing: border-box;
+            }
+            #border-more-values {
+                background-color: #7fff94d0;
+
+                /* we can mix the values of the properties in this order: top, right, bottom, left */
+                /* if we define two values, the style will be aplied in top-bottom and right-left */
+                border-width: 3px 7px;
+                border-color: rgb(26, 58, 0) red blue yellow;
+                border-style: double dashed;
+                
+                box-sizing: border-box;
+            }
+
+            #border-specific {
+                background-color: #045a12d0;
+                box-sizing: border-box;
+
+                border-width: 7px;
+                border-color: rgb(0, 0, 0);
+                border-style: double;
+                
+                /* we can define these values specifically by hand */
+                border-left-width: 11px;
+                border-left-color: #62966ed0;
+                border-left-style: inset;
+            }
+
+            #border-border-radius {
+
+                /* width | style | color */
+                border: 1px solid red;
+
+                /* border-radius - sets the rounded corner of the box */
+                border-radius: 10px;
+            }
+
+            #circle {
+                background-color: antiquewhite;
+                /* with "border-radius:50%;" we can make a circle */
+                border-radius: 50%;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="border-property">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere iusto. Culpa quos, ullam aperiam id deleniti consequuntur dolor blanditiis expedita atque iusto esse odio modi nam, explicabo voluptatibus rerum!
+            Accusamus nulla suscipit consequuntur officia veniam, voluptates adipisci cum nostrum in quo nemo quibusdam nihil aut omnis? Temporibus cumque porro nemo aut iusto consequuntur inventore vero, eos sed ea tenetur.
+        </p>
+        <p id="border-more-values">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere iusto. Culpa quos, ullam aperiam id deleniti consequuntur dolor blanditiis expedita atque iusto esse odio modi nam, explicabo voluptatibus rerum!
+            Accusamus nulla suscipit consequuntur officia veniam, voluptates adipisci cum nostrum in quo nemo quibusdam nihil aut omnis? Temporibus cumque porro nemo aut iusto consequuntur inventore vero, eos sed ea tenetur.
+        </p>
+        <p id="border-specific">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere iusto. Culpa quos, ullam aperiam id deleniti consequuntur dolor blanditiis expedita atque iusto esse odio modi nam, explicabo voluptatibus rerum!
+            Accusamus nulla suscipit consequuntur officia veniam, voluptates adipisci cum nostrum in quo nemo quibusdam nihil aut omnis? Temporibus cumque porro nemo aut iusto consequuntur inventore vero, eos sed ea tenetur.
+        </p>
+        <p id="border-border-radius">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere iusto. Culpa quos, ullam aperiam id deleniti consequuntur dolor blanditiis expedita atque iusto esse odio modi nam, explicabo voluptatibus rerum!
+            Accusamus nulla suscipit consequuntur officia veniam, voluptates adipisci cum nostrum in quo nemo quibusdam nihil aut omnis? Temporibus cumque porro nemo aut iusto consequuntur inventore vero, eos sed ea tenetur.
+        </p>
+
+        <p id="circle">
+        </p>
+    </body>
+</html>

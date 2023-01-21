@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Opacity and Alpha Channel</title>
+        <style>
+            /* Alpha-Channel - rgba */
+            .rgba {
+                /* alpha-channel - controls the color opacity */
+                /* value - 0 to 1 */
+                background-color: rgba(0, 0, 255, 0.425);
+                padding: 5px;
+            }
+            h1.rgba + p {
+                background-color: rgba(0, 0, 255, 0.4);
+                padding: 5px;
+            }
+
+            /* Opacity */
+            .opacity {
+                background-color: rgb(82, 3, 3);
+                /* opacity - sets an opacity for all elements in the parent conteiner, all the paragraphs, titles and more */
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="rgba">The Alpha Channel</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id hic ea, vero porro officiis illo ex consectetur. Ratione ipsa animi aliquid corrupti perferendis, amet reiciendis totam voluptates laboriosam vel!
+        </p>
+
+        <div class="opacity">
+            <h1>The Alpha Channel</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id hic ea, vero porro officiis illo ex consectetur. Ratione ipsa animi aliquid corrupti perferendis, amet reiciendis totam voluptates laboriosam vel!
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>More Inputs</title>
+    </head>
+    <body>
+        <h1>More Inputs</h1>
+
+        <form action="">
+            <h2>Checkbox</h2>
+                <p>
+                    <!-- "checkbox" attribute will create a checkbox input -->
+                    <!-- We can put the label befor or afther the input -->
+                    <input type="checkbox" name="orange" id="orange">
+                    <label for="orange">Orange</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="carrot" id="carrot" v>
+                    <label for="carrot">Carrot</label>
+                </p>
+
+            <h2>Radio Buttons</h2>
+                <p>
+                    <!-- "value" attribute are used to send which option was chosen -->
+                    <!-- to associate the radio boxes, we need to put the same name -->
+                        <label for="brazil">Brazil</label>
+                        <input type="radio" name="local" id="brazil" value="brazil">
+                    <br>
+                        <label for="usa">USA</label>
+                        <input type="radio" name="local" id="usa" value="usa">
+                    <br>
+                        <label for="russia">Russia</label>
+                        <input type="radio" name="local" id="russia" value="russia">
+                </p>
+            
+            <h2>Select and Option</h2>
+                <p> 
+                    <label for="animals">Which Animal Do You Prefer?</label>
+                    <!-- "select" tag will create a select group box -->
+                    <select name="animal" id="animals">
+                        <option value="duck">Duck</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="pig">Pig</option>
+                        <option value="bat">Bat</option>
+                        <option value="chicken">Chicken</option>
+                    </select>
+                </p>
+                
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Class Selector</title>
+        <style>
+            * {
+                text-decoration: none;
+            }
+            /* the class can be applied to multiple elements */
+            /* we use it normally to group some repeated elements, like posts, or comunication boxes, etc */
+            /* . - is used to crate a class */
+            .post {
+                background-color: #faebd7;
+                border: 2px solid #2A2017;
+                margin-bottom: 10px;
+            }
+            .bold {
+                font-weight: bold;
+                color: #3185FC;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" placeholder="search" id="search">
+
+            <!-- "id" - to apply an ID -->
+            <button>Log In</button>
+            <button>Sign Up</button>
+        </form>
+
+        <h1>Universal and Element Selectors</h1>
+
+        <div class="post">
+            <p>
+                Lorem <span class="bold">ipsum</span> dolor <a href="">sit amet</a>.
+            </p>
+            <h2>h2 Title</h2>
+            <button>Click Here</button>
+        </div>
+
+        <div class="post">
+            <p>
+                Lorem ipsum <span class="bold">dolor</span> <a href="">sit amet</a>.
+            </p>
+            <h2>h2 Title</h2>
+            <button>Click Here</button>
+        </div>
+        <div class="post">
+            <p>
+                <span class="bold">Lorem</span> ipsum dolor <a href="">sit amet</a>.
+            </p>
+            <h2>h2 Title</h2>
+            <button>Click Here</button>
+        </div>
+    </body>
+</html>

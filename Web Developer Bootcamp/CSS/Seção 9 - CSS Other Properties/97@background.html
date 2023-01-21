@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background</title>
+        <style>
+            section {
+                width: 80%;
+                height: 800px;
+                margin: 0 auto;
+                border: 1px solid red;
+                /* we can put a link into the "url" to use an image */
+                background-image: url('img/mango.jpg');
+
+                /* cover | contain (repeat) */
+                background-size: contain;
+
+                /* repeat-x | repeat-y | space | round | no-repeat | 2 values */
+                background-repeat: no-repeat;
+
+                background-position: right;
+            }
+
+            section:hover {
+                /* the "background-size" needs to be after the "background-position" */
+                background: rgb(253, 175, 6) url("https://images.unsplash.com/photo-1671725501835-afb7bd1f21ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80") left bottom/contain no-repeat;
+            }
+
+            h1 {
+                font-size: 100px;
+                color: rgba(0, 0, 0, 0.596);
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Background</h1>
+        </section>
+    </body>
+</html>

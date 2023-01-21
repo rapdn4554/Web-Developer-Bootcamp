@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo Classes</title>
+        <style>
+            /* pseudo-class is a keyword added to a selector that specifies a state of the selected element */
+            a {
+                text-decoration: none;
+            }
+            /* hover - when we hover the mouse over a tag*/
+            a:hover {
+                background-color: orange;
+                color: #fff;
+                text-decoration: underline;
+            }
+            button:hover {
+                background-color: rgb(240, 109, 109);
+            }
+
+            /* actived- when we click it's be activated */
+            button:active {
+                background-color: bisque;
+            }
+
+            /* checked - will change the formatting of a chacked tag */
+            input[type="radio"]:checked {
+                box-shadow: 0 0 0 3px rgb(5, 4, 2);
+            }
+            input[type="checkbox"]:checked {
+                box-shadow: 0 0 0 3px rgb(32, 194, 67);
+            }
+
+            div section {
+                background-color: #dfe8dc;
+            }
+
+            /* nth-of-type - will change the formatting depending on determination */
+            /* with just one number, just one will be changed */
+            div section:nth-of-type(1) {
+                background-color: #a8ada6d0;
+            }
+
+            /* with the letter "n" the formatting will be apply in a sequence */
+            div section:nth-of-type(2n) {
+                background-color: #9acc87d0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo Classes</h1>
+        <a href="">Hover Link</a>
+
+        <p>
+            <button>Active Button</button>
+        </p>
+
+        <form action="">
+            <p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="option" id="yes">
+                <br>
+                <label for="no">No</label>
+                <input type="radio" name="option" id="no">
+            </p>
+            <p>
+                <input type="checkbox" name="" id="1">
+                <label for="1">Check Me!</label>
+                <br>
+                <input type="checkbox" name="" id="2">
+                <label for="2">Check Me!</label>
+            </p>
+        </form>
+        <div id="posts">
+            <section>
+                <h2>Post</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus consequuntur qui sed nemo autem, nobis deleniti excepturi beatae aut, aliquam facere facilis.
+                </p>
+                <a href="">Click here for more</a>
+                <hr>
+            </section>
+            <section>
+                <h2>Post</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus consequuntur qui sed nemo autem, nobis deleniti excepturi beatae aut, aliquam facere facilis.
+                </p>
+                <a href="">Click here for more</a>
+                <hr>
+            </section>
+            <section>
+                <h2>Post</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus consequuntur qui sed nemo autem, nobis deleniti excepturi beatae aut, aliquam facere facilis.
+                </p>
+                <a href="">Click here for more</a>
+                <hr>
+            </section>
+            <section>
+                <h2>Post</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus consequuntur qui sed nemo autem, nobis deleniti excepturi beatae aut, aliquam facere facilis.
+                </p>
+                <a href="">Click here for more</a>
+                <hr>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo Elements</title>
+        <style>
+            section {
+                background-color: #eae2b7;
+            }
+            /* pseudo elements are used to style a specific part of selected elements */
+
+            /* first-letter of a h2 */
+            h2::first-letter {
+                text-decoration: underline red;
+            }
+
+            /* first-line of a paragraph */
+            p::first-line {
+                font-weight: bold;
+            }
+
+            /* selection of a paragraph */
+            p::selection {
+                background-color: #003049;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo Elements</h1>
+        <section>
+            <h2>Post 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum dolorem incidunt esse error, accusamus numquam nisi eligendi amet nam optio. Commodi sit ipsum possimus tempora explicabo quis quas ullam?
+            </p>
+            <a href="">View More...</a>
+            <hr>
+        </section>
+        <section>
+            <h2>Post 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum dolorem incidunt esse error, accusamus numquam nisi eligendi amet nam optio. Commodi sit ipsum possimus tempora explicabo quis quas ullam?
+            </p>
+            <a href="">View More...</a>
+            <hr>
+        </section>
+        <section>
+            <h2>Post 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum dolorem incidunt esse error, accusamus numquam nisi eligendi amet nam optio. Commodi sit ipsum possimus tempora explicabo quis quas ullam?
+            </p>
+            <a href="">View More...</a>
+            <hr>
+        </section>
+        <section>
+            <h2>Post 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum dolorem incidunt esse error, accusamus numquam nisi eligendi amet nam optio. Commodi sit ipsum possimus tempora explicabo quis quas ullam?
+            </p>
+            <a href="">View More...</a>
+            <hr>
+        </section>
+    </body>
+</html>
