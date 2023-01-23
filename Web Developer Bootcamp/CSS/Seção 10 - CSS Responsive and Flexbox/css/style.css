@@ -7,7 +7,26 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    height: 1200px;
     margin: 0 auto;
     border: 5px solid #003049;
+
+    /* display:flex - when we put the value equals flex, we are turning on the default flexbox properties */
+    /* main axis ←→ */
+    /* cross axis ↕ */
+    display: flex;
+
+    /* flex-direction: defines the direction of the main axis in our conteiner */
+    /* row (left to right) / row-reverse (right to left) */
+    /* column (top to bottom) / column-reverse (bottom to top) */
+    flex-direction: column-reverse;
+
+    /* justfy-content: determines how the content is distribuited across the main axis */
+    /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+    justify-content: space-evenly;
+}
+
+#container div {
+    width: 125px;
+    height: 125px;
 }
