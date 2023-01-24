@@ -7,7 +7,7 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 1200px;
+    height: 200px;
     margin: 0 auto;
     border: 5px solid #003049;
 
@@ -19,14 +19,36 @@ h1 {
     /* flex-direction: defines the direction of the main axis in our conteiner */
     /* row (left to right) / row-reverse (right to left) */
     /* column (top to bottom) / column-reverse (bottom to top) */
-    flex-direction: column-reverse;
+    flex-direction: row;
 
     /* justfy-content: determines how the content is distribuited across the main axis */
     /* flex-start | flex-end | center | space-between | space-around | space-evenly */
     justify-content: space-evenly;
+
+    /* flex-wrap: the content will wrap depending the size of the flex-box */
+    /* it will change the direction of the cross axis */
+    /* wrap | wrap-reverse | nowrap */
+    flex-wrap: wrap-reverse;
+
+    /* align-items: is going to distribute space, or our items, along the cross axis */
+    /* flex-start | flex-end | center | baseline */
+    align-items: flex-end;
+
+    /* align-content: we used it to control or dristribute the space along the cross axis */
+    /* flex-start | flex-end | space-between |space-around | center */
+    /* align-content: center; */
+}
+
+div:nth-of-type(2) {
+    /* align-self: is used to align a single item on the cross axis */
+    align-self: center;
+}
+div:nth-of-type(4) {
+    /* align-self: is used to align a single item on the cross axis */
+    align-self: flex-start;
 }
 
 #container div {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
