@@ -23,12 +23,12 @@ h1 {
 
     /* justfy-content: determines how the content is distribuited across the main axis */
     /* flex-start | flex-end | center | space-between | space-around | space-evenly */
-    justify-content: space-evenly;
+    justify-content: center;
 
     /* flex-wrap: the content will wrap depending the size of the flex-box */
     /* it will change the direction of the cross axis */
     /* wrap | wrap-reverse | nowrap */
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
 
     /* align-items: is going to distribute space, or our items, along the cross axis */
     /* flex-start | flex-end | center | baseline */
@@ -39,6 +39,18 @@ h1 {
     /* align-content: center; */
 }
 
+/* INDIVIDUAL PROPERTIES */
+div:nth-of-type(1) {
+    /* flex-grow: is going to control the amount of space that an element takes up IF THERE IS SPACE AVALIABLE  */
+    flex-grow: 1;
+
+    /* flex-shrink: will tell you how many times the more one element will shrink relative to the other */
+    flex-shrink: 1.5;
+}
+div:nth-of-type(5) {
+    /* flex-grow: is going to control the amount of space that an element takes up IF THERE IS SPACE AVALIABLE */
+    flex-grow: 2;
+}
 div:nth-of-type(2) {
     /* align-self: is used to align a single item on the cross axis */
     align-self: center;
@@ -49,6 +61,41 @@ div:nth-of-type(4) {
 }
 
 #container div {
-    width: 100px;
+    /* flex-basis: determines the inicial size of a  single element  */
+    /* it can be the width or the height, depending of the main axis */
+    flex-basis: 200px;
+
     height: 100px;
+}
+
+/* MAIN FLEX CONTENT */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+
+    /* flex: is going to define the flex-grow, flex-shrink and flex-basis with a single element */
+    /* one-value: flex-grow (number) | flex-basis (width/height) */
+    /* two-values: flex-grow | flex-basis (ex: 1 30px) */
+    /* two-values: flex-grow | flex-shrink (ex: 1 2) */
+    /* three-values: flex-grow | flex-shrink | flex-basis (ex: 1 1 30%) */
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+
+    /* flex: is going to define the flex-grow, flex-shrink and flex-basis with a single element */
+    /* one-value: flex-grow (number) | flex-basis (width/height) */
+    /* two-values: flex-grow | flex-basis (ex: 1 30px) */
+    /* two-values: flex-grow | flex-shrink (ex: 1 2) */
+    /* three-values: flex-grow | flex-shrink | flex-basis (ex: 1 1 30%) */
+    flex: 2 1 600px;
 }
