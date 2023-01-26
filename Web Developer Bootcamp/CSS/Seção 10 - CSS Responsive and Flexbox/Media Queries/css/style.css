@@ -1,0 +1,50 @@
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+}
+ul,li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+/* MEDIA */
+
+/* it's the sintax to use a media query */
+/* width: when the width is exactly 800px */
+@media (width: 800px) {
+    h1 {
+        color: rgb(0, 17, 255);
+    }
+}
+
+/* min-width: when we got a min value of 800px*/
+@media (min-width: 800px) {
+    a {
+        text-decoration: none;
+    }
+}
+
+/* max-width: when the value of width are less then 800px */
+@media (max-width: 800px) {
+    a {
+        color: aquamarine;
+    }
+}
+
+/* combine: with the keyword "and" */
+@media (min-width: 550px) and (max-width: 600px) {
+    a {
+        font-size: 5em;
+    }
+}
+
+/* orientation */
+@media (orientation: landscape) {
+    body {
+        background-color: bisque;
+    }
+}
