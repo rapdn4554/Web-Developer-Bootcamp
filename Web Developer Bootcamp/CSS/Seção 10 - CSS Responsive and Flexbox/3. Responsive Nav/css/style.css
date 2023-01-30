@@ -19,7 +19,7 @@ ul,li {
     display: flex;
     padding: 0;
     margin: 0;
-    transition: all .5s;
+    transition: all .5s;    
 }
 
 ul {
