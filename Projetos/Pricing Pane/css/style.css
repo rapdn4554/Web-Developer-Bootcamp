@@ -129,7 +129,7 @@ img {
     padding-bottom: 30px;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 960px) {
     main {
         height: 100%;
         display: flex;
