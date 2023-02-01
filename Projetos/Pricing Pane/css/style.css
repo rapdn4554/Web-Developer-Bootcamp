@@ -74,6 +74,7 @@ main section {
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
+    text-align: center;
 }
 main section h2 {
     line-height: 2;
@@ -107,7 +108,7 @@ section a {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 300;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s;
 }
 section a:hover {
     background-color: rgb(238, 244, 255);
@@ -128,7 +129,7 @@ img {
     padding-bottom: 30px;
 }
 
-@media (max-width:960px) {
+@media (max-width: 790px) {
     main {
         height: 100%;
         display: flex;
