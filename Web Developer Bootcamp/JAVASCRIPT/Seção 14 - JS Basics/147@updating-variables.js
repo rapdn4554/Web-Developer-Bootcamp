@@ -1,7 +1,7 @@
 // we can do this
 score = 5;
 
-"score" // write
+"score"
 5
 
 score = score + 5;
@@ -17,8 +17,7 @@ score += 5;
 "score"
 15
 
-score -= 2;
-13
+// we can do: += | -= | *= | /= |
 
-"score"
-13
+score-- // to decrement one by one
+score++ // to increment one by one
