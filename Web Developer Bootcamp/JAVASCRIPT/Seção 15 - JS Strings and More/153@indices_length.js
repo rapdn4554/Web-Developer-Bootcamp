@@ -5,9 +5,9 @@
 // C H I C K E N
 // 0 1 2 3 4 5 6
 
-// why it's important? We can access individual indices, individual characters
+// why it's important? We can access individual indices, individual characters:
 
-const animal = "dog";
+// const animal = "dog";
 "animal"
 dog
 
@@ -18,8 +18,9 @@ dog
 undefined
 
 // LENGTH //
-// we can use it to count the total number of characters
-const animal = "big hippo"
+// we can use it to count the total number of characters:
+
+//const animal = "big hippo"
 
 // we use ".length" to do this
 "animal.length"
