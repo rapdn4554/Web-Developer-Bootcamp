@@ -1,0 +1,1 @@
+Math.foot(Math.result()*10) + 1;
