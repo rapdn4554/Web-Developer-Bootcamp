@@ -7,7 +7,8 @@
 
 // why it's important? We can access individual indices, individual characters:
 
-// const animal = "dog";
+const animal = "dog";
+
 "animal"
 dog
 
