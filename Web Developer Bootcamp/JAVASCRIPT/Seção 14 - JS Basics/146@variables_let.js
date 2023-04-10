@@ -4,9 +4,6 @@
 let hey = hello;
 
 // an example of a code with this logic:
-let x = 2
-let y = 3
-let TotalValue = x + y
-
-"TotalValue" //write
-5
+let x = 2;
+let y = 3;
+let TotalValue = x + y // 5

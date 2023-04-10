@@ -34,6 +34,7 @@ switch (day) {
         console.log("Weekend");
         console.log(day);
         break;
+        
     // default - if nothing was happening, do this
     default:
         console.log("What about are you talking?");

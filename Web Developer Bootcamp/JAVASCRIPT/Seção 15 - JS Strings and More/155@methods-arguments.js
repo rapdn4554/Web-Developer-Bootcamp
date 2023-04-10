@@ -29,7 +29,7 @@ let y = "This is to easy!"
 'is'
 
 "y.slice(-2)"
-'y'
+'y!'
 
 // REPLACE
 // replaces a string text to what we want

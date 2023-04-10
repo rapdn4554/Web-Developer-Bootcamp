@@ -9,9 +9,9 @@
 // outputs a message to the web console with a warn icon
 "console.warn('msg')" // [warn icon] msg
 
-// Log
+// Error
 // outputs a message to the web console with an error icon
-"console.error('msg')" // [error icon]msg
+"console.error('msg')" // [error icon] msg
 
 // ALERT //
 // is going to print out something to the user, but not in the console. It's a pop-up!
@@ -25,3 +25,4 @@ let userInput = prompt("Enter a number!") // 12
 
 // PARSEINT //
 // is going to transform a string in a number
+"parseInt('1')" // 1
