@@ -21,7 +21,7 @@ colors.splice(5, 1) // ["indigo"] //was deleted
 
 // adding
 // indexOf 4, delete nothing
-colors.splice(4, 0, 'violet')
+colors.splice(4, 0, 'violet') // colors = ['red', 'green', 'blue', 'yellow', 'violet', 'purple', 'brown', 'orange', 'pink']
 
 // SORT
 // will sorts the elements of an array in place and returns the sorted array

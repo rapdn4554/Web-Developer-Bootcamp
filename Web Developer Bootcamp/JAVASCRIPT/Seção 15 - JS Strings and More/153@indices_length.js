@@ -10,9 +10,9 @@
 const animal = "dog";
 
 "animal"
-dog
+'dog'
 
-"animal[2]"
+"animal[1]"
 "o"
 
 "animal[4]"

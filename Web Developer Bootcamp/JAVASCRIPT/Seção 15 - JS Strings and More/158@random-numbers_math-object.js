@@ -8,7 +8,7 @@
 "Math.PI"
 '3.141592653589793'
 
-//  Absolute value
+// Absolute value
 "Math.abs(-456)"
 '456'
 
